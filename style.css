@@ -74,3 +74,36 @@ nav ul li a{
     padding-left: 60px;
     position: relative;
 }
+
+.left-col h1::before{
+    content: " ";
+    background: #0011db;
+    height: 80%;
+    width: 8px;
+    border-radius: 5px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+
+}
+.right-col h3{
+    color: #fff;
+    font-weight: 500;
+    padding-left: 50px;
+    position: absolute;
+    bottom: 120px;
+}
+
+.right-col h3::before{
+    content: " ";
+    background: #fff;
+    height: 100%;
+    width: 6px;
+    border-radius: 5px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+
+}
