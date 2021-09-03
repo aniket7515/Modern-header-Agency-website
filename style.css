@@ -107,3 +107,56 @@ nav ul li a{
     position: absolute;
 
 }
+.play-icon{
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.team{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+.user-col{
+    flex-basis: 30%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s;
+    position: relative;
+}
+.user-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info{
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.info p{
+    color: #555;
+    font-weight: 600;
+}
+
+.user-col:hover .info{
+    opacity: 1;
+}
+.user-col:hover{
+    transform: translateY(-30px);
+}
+
+.user-col .arrow-icon{
+    width: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 1s;
+}
+.user-col:hover .arrow-icon{
+    opacity: 0;
+}
